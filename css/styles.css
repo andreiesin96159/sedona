@@ -1,0 +1,218 @@
+@font-face {
+    font-family: "PT Sans";
+    font-style: normal;
+    font-weight: 400;
+    src: url("fonts/pt-sans-regular.woff2") format("woff2");
+    font-display: swap;
+  }
+  
+  @font-face {
+    font-family: "PT Sans";
+    font-style: normal;
+    font-weight: 700;
+    src: url("fonts/pt-sans-bold.woff2") format("woff2");
+    font-display: swap;
+  }
+  
+  @font-face {
+    font-family: "PT Sans";
+    font-style: italic;
+    font-weight: 400;
+    src: url("fonts/pt-sans-italic.woff2") format("woff2");
+  }
+  
+  @font-face {
+    font-family: "PT Sans";
+    font-style: italic;
+    font-weight: 700;
+    src: url("fonts/pt-sans-bold-italic.woff2") format("woff2");
+    font-display: swap;
+  }
+  
+  
+  @font-face {
+    font-family: "PT Sans Narrow";
+    font-style: normal;
+    font-weight: 700;
+    src: url("fonts/pt-sans-narrow-bold.woff2") format("woff2");
+    font-display: swap;
+  }
+
+body
+{
+    font-family: "PT Sans", sans-serif;
+    font-size: 18px;
+    line-height: 21px;
+    background-color: #FFFFFF;
+    color: black;
+}
+
+.navigation
+{
+  display: flex;
+  justify-content: space-between;
+}
+.navigation-list 
+{
+  display: flex;
+
+}
+.navigation-item
+{
+  margin-left: 10px;
+}
+.navigation-item a
+{
+    
+    color: black;
+    background-color: #FFFFFF;
+    font-weight: bold;
+    font-size: 20px;
+    line-height: 26px;
+    text-decoration: none;
+}
+
+.welcome
+{
+    background: url("../img/pictures/welcome.jpg") no-repeat ;
+    width: 1200px;
+    height: 485px;   
+}
+
+.description
+{
+  text-align: center;
+  width: 1200px;
+  height: 282px;
+}
+
+.description-sedona
+{ 
+    font-weight: bold;
+    font-size: 30px;
+    line-height: 36px;
+    text-transform: uppercase;
+    
+}
+
+.description-consider
+{
+    color: #333333;
+    font-size: 22px;
+    line-height: 36px;
+}
+
+
+
+.advantages-title-white
+{
+
+font-weight: bold;
+font-size: 24px;
+line-height: 28px;
+text-transform: uppercase;
+color: #FFFFFF;
+}
+.advantages-description-white
+{
+color: #FFFFFF;
+font-size: 18px;
+line-height: 21px;
+
+}
+.block-item
+{
+  background-color:#83B3D3 ; 
+}
+.advantages-item h3
+{
+ 
+ font-style: normal;
+font-weight: bold;
+font-size: 24px;
+line-height: 28px;
+text-transform: uppercase;
+width: 400px;
+height: 60px;
+
+}
+.advantages-item p 
+{
+
+font-weight: normal;
+font-size: 18px;
+line-height: 21px;
+color: #333333;
+}
+.hotel-search-title
+{
+font-weight: bold;
+font-size: 30px;
+line-height: 36px;
+text-transform: uppercase;
+width: 720px;
+height: 50px;
+}
+.hotel-search-description
+{
+font-weight: normal;
+font-size: 22px;
+line-height: 26px;
+color: #333333;
+}
+.hotel-search-link 
+{
+  
+  padding: 15px 60px;
+  font-weight: bold;
+  border: 2px solid #756257;
+  background-color:#756257;
+  color: #FFFFFF;
+  text-decoration: none;
+  border-radius: 10px;
+}
+
+.appointment 
+{
+  background: url("../img/pictures/background.jpg") no-repeat;
+  width: 1200px;
+  height: 411px;
+}
+
+.title-form
+{ 
+font-weight: bold;
+font-size: 30px;
+line-height: 36px;
+text-transform: uppercase;
+color: #FFFFFF;
+}
+.description-form
+{
+font-weight: normal;
+font-size: 22px;
+line-height: 26px;
+color: #FFFFFF;
+}
+.button-subscribe
+{
+font-weight: bold;
+font-size: 20px;
+line-height: 26px;
+color: #FFFFFF;
+text-transform: uppercase;
+background: #83B3D3;
+border: 2px solid #83B3D3;
+border-radius: 0px 10px 10px 0px;
+padding: 10px 25px;
+}
+
+.footer-contacts-address-phone
+{
+font-weight: normal;
+font-size: 40px;
+line-height: 40px;
+color: #000000;
+text-transform: uppercase;
+text-decoration: none;
+}
