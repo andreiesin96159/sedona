@@ -117,7 +117,6 @@ li
 }
 .main-index
 {
-  border: 2px solid red;
   margin: 0 auto;
   padding: 0;
   width: 1200px;
@@ -178,20 +177,16 @@ li
   width: 1200px;
   margin: 0;
   padding: 0;
-  border: 2px solid rebeccapurple;
 }
-
 
 .advantages-list
 {
 display: grid;
 grid-template-columns: repeat(3, 400px);
-grid-template-rows: repeat(3, 400px);
 column-gap: 0;
 row-gap: 0;
 margin: 0;
 padding: 0;
-border: 2px solid red;
 grid-template-areas: "first second second"
                       "block3 block4 block5"
                        "block6 block6 block7"
@@ -208,14 +203,17 @@ grid-template-areas: "first second second"
 .block3
 {
   grid-area: block3;
+  background: rgba(131, 179, 211, 0.12);
 }
 .block4
 {
 grid-area: block4;
+background: #FFFFFF;
 }
 .block5
 {
   grid-area: block5;
+  background: rgba(131, 179, 211, 0.12);
 }
 .block6
 {
@@ -228,14 +226,17 @@ grid-area: block4;
 .block8
 {
   grid-area: block8;
+  background: rgba(131, 179, 211, 0.12);
 }
 .block9
 {
   grid-area: block9;
+  background: rgba(131, 179, 211, 0.2);
 }
 .block10
 {
 grid-area: block10;
+background: rgba(131, 179, 211, 0.12);
 }
 .advantages-item
 {
@@ -247,12 +248,12 @@ grid-area: block10;
 }
 
 
-.img-item
+.img-item-index
 {
   width: 74px;
   height: 72px;
   margin: 0 auto;
-  padding-top: 89px;
+  padding-top: 85px;
   padding-bottom: 23px;
 }
 
@@ -292,15 +293,33 @@ font-weight: bold;
 font-size: 24px;
 line-height: 28px;
 text-transform: uppercase;
+margin-top: 23px;
+margin-bottom: 23px;
 }
+.title-block
+{
+  padding-top: 78px;
+}
+.advantages-description-service
+{
+  font-weight: normal;
+font-size: 18px;
+line-height: 21px;
+color: #333333;
+padding-left: 75px;
+padding-right: 75px;
+padding-bottom: 79px;
+margin: 0 auto;
 
+}
 .advantages-description
 {
 font-weight: normal;
 font-size: 18px;
 line-height: 21px;
 color: #333333;
-padding-bottom: 79px;
+margin-top: 25px;
+margin-bottom: 26px;
 padding-left: 75px;
 padding-right: 75px;
 }
@@ -372,8 +391,8 @@ color: #FFFFFF;
 .field-email
 {
 width: 600px;
-height: 60px;
-border: 2px solid white;
+height: 56px;
+border: 1px solid white;
 border-radius: 10px 0px 0px 10px;
 background: #F2F2F2;
 
@@ -642,7 +661,7 @@ color: #333333;
   display: flex;
   flex-direction: column;
   margin: 0 auto;
-  width: 1056px;
+  width: 1200px;
   margin-top: 75px;
   padding: 0;
 }
@@ -653,16 +672,20 @@ color: #333333;
   display: flex;
    justify-content: space-between;
    margin: 0;
+   margin-bottom: 30px;
+   margin-top: 30px;
+   width: 1200px;
 }
 .description-hotel
 {
   display: flex;
-  align-items: flex-end;
   justify-items: center;
-  border: 2px solid red;
-margin: 0;
- 
+  margin: 0;
+  width: 535px;
+  height: 120px;
+  
 }
+
 
 .product-image
 {
@@ -675,22 +698,25 @@ margin: 0;
 
 .product-title
 {
-  
-  height: 31px;
+  margin: 0;
+  padding: 0;
+  padding-bottom: 2px;
 }
 .place-price
 {
-  
   display: flex;
-
+   padding-bottom: 31px;
+   padding-top: 2px;
 }
 
 
 
-.product-title .place-price .button-catalog
+.blok-description
 {
   display: flex;
   flex-direction: column;
+  
+  padding-left: 37px;
 }
 
 
@@ -704,41 +730,64 @@ margin: 0;
   line-height: 31px;
   color: #000000;
   text-decoration: none;
+  margin: 0;
+  padding: 0;
+  
+}
+.stars-item
+{
+  margin-right: 7px;
   
 }
 
 .stars-list
 {
   display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 0;
+  margin-bottom: 31px;
+ 
 }
 .place
 {
+  margin: 0;
+padding: 0;
 font-weight: normal;
 font-size: 18px;
 line-height: 23px;
 color: #333333;
+margin-right:39px ;
+
 }
 .product-price
 {
+  margin: 0;
+padding: 0;
 font-weight: normal;
 font-size: 18px;
 line-height: 23px;
 color: #333333;
+margin-left:39px ;
+
 }
 .button-details
 {
+
 font-weight: bold;
 font-size: 16px;
 line-height: 21px;
 text-transform: uppercase;
 background: #756257;
 border-radius: 4px;
-border: 2px solid #756257;
 color: #FFFFFF;
 text-decoration: none;
-width: 151px;
-height: 37px;
 text-align: center;
+margin-right: 4px;
+padding-top: 9px;
+padding-bottom: 10px;
+padding-right: 25px;
+padding-left: 25px;
 }
 .button-wishlist
 {
@@ -749,14 +798,16 @@ text-transform: uppercase;
 color: #FFFFFF;
 background: #83B3D3;
 border-radius: 4px;
-border: 2px solid #83B3D3;
 text-decoration: none;
-width: 151px;
-height: 37px;
-
+margin-left: 4px;
+padding-top: 9px;
+padding-bottom: 10px;
+padding-right: 25px;
+padding-left: 25px;
 }
 .rating-balls
 {
+  
 font-weight: normal;
 font-size: 16px;
 line-height: 21px;
@@ -766,7 +817,17 @@ background: #F2F2F2;
 border-radius: 4px;
 border: 2px solid #F2F2F2;
 width: 160px;
-height: 37px;
+margin-top: 31px;
+text-align: center;
+padding-top: 9px;
+padding-bottom: 10px;
+}
+.rating
+{
+  display: flex;
+  flex-direction: column;
+  align-items: stretch;
+  justify-content: center;
 }
 
 .button-more
@@ -872,14 +933,7 @@ margin-left: 51px;
   padding: 0;
   margin-top: 89px;
 }
-.field-email-2
-{
-  width: 600px;
-  height: 60px;
-  border: 2px solid white;
-  border-radius: 10px 0px 0px 10px;
-  background: #F2F2F2;
-}
+
 .button-subscribe-2
 {
   font-weight: bold;
@@ -893,7 +947,7 @@ margin-left: 51px;
   width: 200px;
   height: 60px;
 }
-.appointment-form-2
+.appointment-form
 {
  display: flex;
  align-items: center;
