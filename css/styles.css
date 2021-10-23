@@ -62,7 +62,7 @@ body
   position: relative;
   z-index: 2;
   margin-left: 151px;
-  margin-right: 209px;
+  margin-right: 235px;
 }
 .page-header
 {
@@ -114,8 +114,8 @@ li
 .navigation-item
 {
   margin-right: 33px;
- 
 }
+
 .button-want-here
 {
   background: #756257;
@@ -515,11 +515,7 @@ margin-left: 29px;
 .catalog-filter-group-price
 {
   border:0 none;
-  display: grid;
-  grid-template-columns: repeat(2, 150px);
-  gap: 32px;
-  padding: 0;
- 
+  
 }
 .catalog-filter-list
 {
@@ -545,10 +541,33 @@ margin-left: 29px;
 {
   border: 2px solid #FFFFFF;
 box-sizing: border-box;
-border-radius: 4px;
+background: none;
 height: 48px;
 width: 143px;
 margin-top: 34px;
+color:#FFFFFF;
+font-weight: normal;
+font-size: 18px;
+outline:none;
+}
+
+.filter-input-stily::-webkit-inner-spin-button
+{
+  -webkit-appearance: none;
+}
+.border-radus-min
+{
+  border-radius: 4px 0px 0px 4px;
+}
+.border-radus-max
+{
+  border-radius: 0px 4px 4px 0px;
+}
+.catalog-filter-input
+{
+  display: flex;
+  margin: 0 auto;
+  padding: 0;
 }
 .block-filter
 {
@@ -626,6 +645,11 @@ line-height: 23px;
   display: flex;
   flex-direction: column;
   margin-top: 30px;
+}
+.range-toggle-block
+{
+  display: flex;
+  margin-top: 20px;
 }
 .range-toggle
 {
@@ -854,6 +878,11 @@ padding-top: 9px;
 padding-bottom: 10px;
 padding-right: 25px;
 padding-left: 25px;
+}
+.button-wishlist:hover
+{
+  background: #7DB54F;
+border-radius: 4px;
 }
 .rating-balls
 {
