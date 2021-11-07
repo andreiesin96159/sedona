@@ -974,7 +974,20 @@ border-radius: 30px;
   top: 90px;
   right: 110px;
 } 
-
+.modal-close-button:hover
+{
+  background: url("../img/svg/close.svg") no-repeat center;
+  background-color: #E6E6E6;
+}
+.modal-close-button:focus-visible
+{
+  border:2px solid #4d96c7;
+  outline: none;
+}
+.modal-close-button:active
+{
+  opacity: 0.3;
+}
 .modal-title {
   margin: 0;
   margin-bottom: 24px;
@@ -1008,7 +1021,21 @@ border-radius: 30px;
  position: relative;
  
 }
-
+.field:hover
+{
+  background: #E6E6E6;
+  border-radius: 4px;
+}
+.field:focus
+{
+  border:2px solid #4d96c7;
+  outline: none;
+}
+.field:active
+{
+  border:2px solid black;
+  outline: none;
+}
 .auth-form
 {
   position: absolute;
@@ -1052,6 +1079,45 @@ border: none;
 background: url("../img/svg/minus.svg") no-repeat #F2F2F2 center;
 background-size: 13px 13px;
 }
+.button-minus:hover
+{
+  width: 44px;
+  border-radius:  4px 0  0 4px;
+  border: none;
+  background: url("../img/svg/minusBlack.svg") no-repeat #F2F2F2 center;
+  background-size: 13px 13px;
+}
+.button-plus:hover
+{
+  width: 44px;
+  border-radius:  4px 0  0 4px;
+  border: none;
+  background: url("../img/svg/plusBlack.svg") no-repeat #F2F2F2 center;
+  background-size: 13px 13px;
+}
+.button-minus:focus-visible
+{
+  border: 3px solid #83B3D3;
+  box-sizing: border-box;
+  border-radius: 4px;
+  outline: none;
+}
+.button-plus:focus-visible
+{
+  border: 3px solid #83B3D3;
+  box-sizing: border-box;
+  border-radius: 4px;
+  outline: none;
+}
+.button-minus:active
+{
+  opacity: 0.3;
+}
+.button-plus:active
+{
+  opacity: 0.3;
+}
+
 .button-plus
 {
   width: 44px;
@@ -1076,8 +1142,24 @@ line-height: 40px;
 text-align: center;
 text-transform: uppercase;
 }
-
-
+.button-form-search:hover
+{
+  background: #68A2CA;
+border-radius: 10px;
+}
+.button-form-search:focus-visible
+{
+  background: #68A2CA;
+border: 3px solid #756257;
+border-radius: 10px;
+outline: none;
+}
+.button-form-search:active
+{
+  background: #5d9bc5;
+  border-radius: 10px;
+  color: #7cb5db;
+}
 
 .children-form-field, .adults-form-field
 {
@@ -1111,7 +1193,10 @@ border-radius: 50%;
 border: none;
 color: #FFFFFF;
 }
-
+.helper:hover
+{
+  background: #68A2CA;
+}
 .helper-block
 {
   display: flex;
