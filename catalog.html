@@ -11,9 +11,9 @@
   <header class="page-header">
     <nav class="navigation">
       <ul class="navigation-list">
-        <li class="navigation-item"><a href="#" class="navigation-link navigation-link-current">Главная</a></li>
+        <li class="navigation-item"><a href="#" class="navigation-link">Главная</a></li>
         <li class="navigation-item"><a href="#" class="navigation-link">О Седоне</a></li>
-        <li class="navigation-item"><a href="#" class="navigation-link">Гостиницы</a></li>
+        <li class="navigation-item"><a href="#" class="navigation-link navigation-link-current">Гостиницы</a></li>
       </ul>
 
       <a class="link-logo" href="https://htmlacademy.ru">
@@ -30,6 +30,7 @@
           </a>
         </li>
         <li class="navigation-item navigation-icon-block">
+          <div class="wishlist-button">12</div>
           <a href="#" class="navigation-link">
             <svg class="navigation-icon" width="18" height="17" xmlns="http://www.w3.org/2000/svg">
               <path
@@ -127,8 +128,8 @@
         <fieldset class="catalog-filter-group-price">
           <legend class="catalog-filter-title">Стоимость, ₽:</legend>
           <div class="catalog-filter-input">
-            <input class="filter-input-stily border-radus-min" type="number" name="min-price" placeholder="от">
-            <input class="filter-input-stily border-radus-max" type="number" name="max-price" placeholder="до">
+         <label for="min-price" class="borders-min">от</label> <input class="filter-input-stily border-radus-min min-price" type="number" name="min-price" >
+           <label for="max-price" class="borders-max">до</label> <input class="filter-input-stily border-radus-max max-price" type="number" name="max-price" >
           </div>
           <div class="range-scale">
             <div class="range-toggle-block" style="left: 42px; width: 136px">
