@@ -21,7 +21,7 @@
       </a>
 
       <ul class="navigation-list  navigation-user">
-        <li class="navigation-item navigation-icon-block">
+        <li class="navigation-item navigation-icon-block search-button">
           <a href="#" class="navigation-link">
             <svg class="navigation-icon" width="18" height="18" xmlns="http://www.w3.org/2000/svg">
               <path
@@ -49,6 +49,7 @@
 
   <main class="main-index-2">
     <section class="block-filter">
+      <span class="visually-hidden">Фильтер каталога</span>
       <section class="breadcrumbs">
         <header class="breadcrumbs-header">
           <h1 class="page-title">Гостиницы Седоны</h1>
@@ -105,21 +106,21 @@
             <li class="catalog-filter-item">
               <label class="control-gos">
                 <input type="radio" name="control-gos" id="control-gos" class="control-navigation">
-                <span>Гостиница</span>
+                <span class="control-label">Гостиница</span>
               </label>
             </li>
 
             <li class="catalog-filter-item">
               <label class="control-mot">
                 <input type="radio" name="control-mot" id="control-mot" class="control-navigation">
-                <span>Мотель</span>
+                <span class="control-label">Мотель</span>
               </label>
             </li>
 
             <li class="catalog-filter-item">
               <label class="control-apart">
                 <input type="radio" name="control-apart" id="control-apart" class="control-navigation">
-                <span>Апартаменты</span>
+                <span class="control-label">Апартаменты</span>
               </label>
             </li>
           </ul>
@@ -176,6 +177,7 @@
     </div>
 
     <ul class="product">
+      <span class="visually-hidden">Список гостиниц</span>
       <div class="line-section"></div>
       <li class="product-item">
 
@@ -200,10 +202,10 @@
         </div>
         <div class="rating">
           <ul class="stars-list">
-            <li class="stars-item"><img src="img/svg/star.svg" alt=""></li>
-            <li class="stars-item"><img src="img/svg/star.svg" alt=""></li>
-            <li class="stars-item"><img src="img/svg/star.svg" alt=""></li>
-            <li class="stars-item"><img src="img/svg/star.svg" alt=""></li>
+            <li class="stars-item"><img src="img/svg/star.svg" alt="" style="width: 18px; height: 17px;"></li>
+            <li class="stars-item"><img src="img/svg/star.svg" alt="" style="width: 18px; height: 17px;"></li>
+            <li class="stars-item"><img src="img/svg/star.svg" alt="" style="width: 18px; height: 17px;"></li>
+            <li class="stars-item"><img src="img/svg/star.svg" alt="" style="width: 18px; height: 17px;"></li>
           </ul>
           <p class="rating-balls">Рейтинг: 8,5</p>
         </div>
@@ -229,9 +231,9 @@
         </div>
         <div class="rating">
           <ul class="stars-list">
-            <li class="stars-item"><img src="img/svg/star.svg" alt=""></li>
-            <li class="stars-item"><img src="img/svg/star.svg" alt=""></li>
-            <li class="stars-item"><img src="img/svg/star.svg" alt=""></li>
+            <li class="stars-item"><img src="img/svg/star.svg" alt="" style="width: 18px; height: 17px;"></li>
+            <li class="stars-item"><img src="img/svg/star.svg" alt="" style="width: 18px; height: 17px;"></li>
+            <li class="stars-item"><img src="img/svg/star.svg" alt="" style="width: 18px; height: 17px;"></li>
 
           </ul>
           <p class="rating-balls">Рейтинг: 8,9</p>
@@ -258,8 +260,8 @@
         </div>
         <div class="rating">
           <ul class="stars-list">
-            <li class="stars-item"><img src="img/svg/star.svg" alt=""></li>
-            <li class="stars-item"><img src="img/svg/star.svg" alt=""></li>
+            <li class="stars-item"><img src="img/svg/star.svg" alt="" style="width: 18px; height: 17px;"></li>
+            <li class="stars-item"><img src="img/svg/star.svg" alt="" style="width: 18px; height: 17px;"></li>
           </ul>
           <p class="rating-balls">Рейтинг: 9,2</p>
 
@@ -286,8 +288,8 @@
         </div>
         <div class="rating">
           <ul class="stars-list">
-            <li class="stars-item"><img src="img/svg/star.svg" alt=""></li>
-            <li class="stars-item"><img src="img/svg/star.svg" alt=""></li>
+            <li class="stars-item"><img src="img/svg/star.svg" alt="" style="width: 18px; height: 17px;"></li>
+            <li class="stars-item"><img src="img/svg/star.svg" alt="" style="width: 18px; height: 17px;"></li>
           </ul>
           <p class="rating-balls">Рейтинг: 9,2</p>
 
@@ -302,7 +304,7 @@
     <div class="switch-page">
       <ul class="pagination">
         <li class="pagination-item">
-          <a href="#" class="pagination-link">1</a>
+          <a href="#" class="pagination-white">1</a>
         </li>
         <li class="pagination-item">
           <a href="#" class="pagination-link">2</a>
@@ -314,7 +316,7 @@
           <a href="#" class="pagination-link">4</a>
         </li>
         <li class="pagination-item">
-          <a href="#" class="pagination-link"><span class="visually-hidden">Страницы сежду</span>...</a>
+          <a href="#" class="pagination-link"><span class="visually-hidden">Страницы между</span>...</a>
         </li>
         <li class="pagination-item">
           <a href="#" class="pagination-link">10</a>
@@ -341,7 +343,8 @@
       <h2 class="title-form-2">Подпишитесь на рассылку</h2>
       <p class="description-form-2">Только полезная информация и никакого спама, <br>честное бойскаутское! </p>
 
-      <form method="post" class="appointment-form" action="https://echo.htmlacademy.ru/">
+      <form method="post" class="appointment-form-2" action="https://echo.htmlacademy.ru/">
+        <span class="visually-hidden">Форма подписки</span>
         <label for="appointment-email"></label>
         <input type="email" class="field-email" placeholder="Ваш e-mail" id="appointment-email"
           name="appointment-email">
