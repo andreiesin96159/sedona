@@ -1675,6 +1675,7 @@ height: 20px;
 background: #FFFFFF;
 border-radius: 4px;
 margin-right: 21px;
+-webkit-appearance: none;
 }
 .control-box:focus
 {
