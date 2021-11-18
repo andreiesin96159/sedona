@@ -4,6 +4,7 @@
 <head>
   <meta charset="utf-8">
   <title>Каталог</title>
+  <link rel="icon" type="image/png" sizes="32x32" href="img/pictures/favicon.png">
   <link rel="stylesheet" href="css/styles.css">
 </head>
 
@@ -37,7 +38,7 @@
                 d="M8.9 17a1 1 0 0 1-.8-.4l-7-7.9A5.4 5.4 0 0 1 5.5 0C6.8 0 8 .5 9 1.3a5.5 5.5 0 0 1 9 4.1c0 1.3-.5 2.5-1.3 3.4l-7 7.9c-.2.2-.4.3-.8.3Zm-6-9.5L9 14.4l6.2-7c.5-.5.7-1.2.7-2 0-1.8-1.5-3.3-3.3-3.3-1 0-2 .5-2.7 1.3-.3.3-.6.4-.9.4-.3 0-.6-.2-.8-.4a3.7 3.7 0 0 0-2.7-1.3 3.3 3.3 0 0 0-3.3 3.3c-.1.9.3 1.6.7 2.1-.1 0-.1 0 0 0Z" />
             </svg>
           </a>
-          
+
         </li>
         <li class="navigation-item">
           <a href="#" class="navigation-link-button">
@@ -105,21 +106,24 @@
 
             <li class="catalog-filter-item">
               <label class="control-gos">
-                <input type="radio" name="control-gos" id="control-gos" class="control-navigation">
+                <input type="radio" name="control-gos" id="control-gos" class="control-navigation visually-hidden">
+                <span class="control-custom"></span>
                 <span class="control-label">Гостиница</span>
               </label>
             </li>
 
             <li class="catalog-filter-item">
               <label class="control-mot">
-                <input type="radio" name="control-mot" id="control-mot" class="control-navigation">
+                <input type="radio" name="control-mot" id="control-mot" class="control-navigation visually-hidden">
+                <span class="control-custom"></span>
                 <span class="control-label">Мотель</span>
               </label>
             </li>
 
             <li class="catalog-filter-item">
               <label class="control-apart">
-                <input type="radio" name="control-apart" id="control-apart" class="control-navigation">
+                <input type="radio" name="control-apart" id="control-apart" class="control-navigation visually-hidden">
+                <span class="control-custom"></span>
                 <span class="control-label">Апартаменты</span>
               </label>
             </li>
@@ -129,8 +133,10 @@
         <fieldset class="catalog-filter-group-price">
           <legend class="catalog-filter-title">Стоимость, ₽:</legend>
           <div class="catalog-filter-input">
-         <label for="min-price" class="borders-min">от</label> <input class="filter-input-stily border-radus-min min-price" type="number" name="min-price" >
-           <label for="max-price" class="borders-max">до</label> <input class="filter-input-stily border-radus-max max-price" type="number" name="max-price" >
+            <label for="min-price" class="borders-min">от</label>
+            <input class="filter-input-stily border-radus-min min-price" id="min-price" type="number" name="min-price">
+            <label for="max-price" class="borders-max">до</label>
+            <input class="filter-input-stily border-radus-max max-price" id="max-price" type="number" name="max-price">
           </div>
           <div class="range-scale">
             <div class="range-toggle-block" style="left: 42px; width: 136px">
@@ -177,8 +183,8 @@
     </div>
 
     <ul class="product">
-      <span class="visually-hidden">Список гостиниц</span>
-      <div class="line-section"></div>
+
+
       <li class="product-item">
 
         <div class="description-hotel">
@@ -210,7 +216,7 @@
           <p class="rating-balls">Рейтинг: 8,5</p>
         </div>
       </li>
-      <div class="line-section"></div>
+
       <li class="product-item">
 
         <div class="description-hotel">
@@ -239,7 +245,7 @@
           <p class="rating-balls">Рейтинг: 8,9</p>
         </div>
       </li>
-      <div class="line-section"></div>
+
       <li class="product-item">
 
         <div class="description-hotel">
@@ -267,7 +273,7 @@
 
         </div>
       </li>
-      <div class="line-section"></div>
+
       <li class="product-item">
 
         <div class="description-hotel">
@@ -296,9 +302,9 @@
         </div>
 
       </li>
-      <div class="line-section"></div>
-      <button class="button-more">Загрузить еще</button>
-      <div class="line-section"></div>
+      <li class="block-buttom-more">
+        <button class="button-more">Загрузить еще</button>
+      </li>
     </ul>
 
     <div class="switch-page">
