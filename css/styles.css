@@ -1037,8 +1037,8 @@ border-radius: 30px;
 }
 .field:active
 {
-  border:2px solid black;
-  outline: none;
+border:2px solid black;
+outline: none;
 }
 .error-field
 {
