@@ -68,7 +68,6 @@ margin: 0;
 position: relative;
 top: -6px;
  right: 2px;
-
 }
 .svg-wishlist
 {
@@ -1344,6 +1343,7 @@ position: relative;
   margin-right: 17px;
   position: relative;
 }
+
 .catalog-filter-group-price
 {
   border:0 none;
@@ -1574,18 +1574,50 @@ opacity: 0.6;
   padding: 0;
   margin: 0;
   width: 20px;
-height: 20px;
+  height: 20px;
 background: #FFFFFF;
 border-radius: 4px;
 margin-right: 21px;
-
 }
-.control-box:focus
+.control-custom-input
 {
-  box-shadow: 0 0 0 3px #83B3D3;
+ width: 14px;
+height: 14px;
 border-radius: 4px;
-outline: none;
-margin-right: 21px;
+border: 3px solid transparent;
+display: block;
+background: #FFFFFF;
+margin-right: 17px;
+position: relative;
+}
+.control-box:checked + .control-custom-input::before
+{
+  position: absolute;
+  left: 0;
+  top: 38%;
+  width: 2px;
+  background-color: #3F5E72;
+  content: "";
+  transform: translateX(6px) rotate(-54deg);
+  transform-origin: left bottom;
+  height: 6px;
+}
+.control-box:checked + .control-custom-input::after
+{
+  position: absolute;
+  left: -4px;
+  bottom: 2px;
+  height: 2px;
+  width: 78%;
+  background-color: #3F5E72;
+  content: "";
+  transform: translateX(11px) rotate(-54deg);
+  transform-origin: left bottom;
+}
+.control-box:focus-visible + .control-custom-input
+{
+  border-color: #83B3D3;
+  outline: none;
 }
 .control-box:active
 {
