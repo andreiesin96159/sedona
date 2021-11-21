@@ -51,12 +51,16 @@ body
 .img-photo-1
 {
   width: 800px;
-  height: 384px;
+  height: 100%;
+  object-fit: cover;
+  display: block;
 }
 .img-photo-2
 {
   width: 800px;
-  height: 384px;
+  height: 100%;
+  object-fit: cover;
+  display: block;
 }
 /*Стили на главную страницу */
 .wishlist-list
@@ -232,7 +236,6 @@ margin: 0;
   left: -2px;
   bottom: -2px;
 }
-
 .navigation-icon
 {
   position: relative;
@@ -301,6 +304,10 @@ li
 {
   color: #756257;
 }
+.navigation-link:active
+{
+  color: rgba(117, 98, 87, .3);
+}
 .navigation-link:focus-visible
 {
   box-sizing: border-box;
@@ -355,10 +362,13 @@ text-align: center;
   margin: 0;
   flex-wrap: wrap;
 }
-
 .navigation-icon-block:focus-visible
 {
   padding: 18px;
+}
+.navigation-icon-block:active
+{
+opacity: 0.3;
 }
 .navigation-link-button:hover
 {
@@ -370,6 +380,10 @@ border-radius: 4px;
   box-shadow:  0 0 0 4px #83B3D3;
   border-radius: 5px;
   outline: none;
+}
+.navigation-link-button:active
+{
+color: rgba(255, 255, 255, .3);
 }
 .navigation-link-button
 {
@@ -405,7 +419,6 @@ right: -18px;
     background: none;
     width: 70px;
     position: relative;
-    
 }
 .page-container
 {
@@ -459,7 +472,6 @@ right: -18px;
   margin-bottom: 80px;
   margin-top: 63px;
 }
-
 .description-sedona
 { 
     font-weight: bold;
@@ -521,26 +533,26 @@ background: #FFFFFF;
   grid-column-start: 1;
   grid-column-end: 3;
 }
-.block8
-{
-  background: rgba(131, 179, 211, 0.12);
-}
-.block9
-{
-  background: rgba(131, 179, 211, 0.2);
-}
-.block10
-{
-background: rgba(131, 179, 211, 0.12);
-}
-.advantages-item
+.advantages-service .advantages-item, .block-lower
 {
   width: 400px;
-  justify-content: space-evenly;
+  justify-content: space-between;
   text-align: center;
   display: flex;
   flex-direction: column;
   min-height: 384px;
+  padding: 184px 75px 79px;
+  box-sizing: border-box;
+}
+.block-lower
+{
+  padding-top: 98px;
+  background: rgba(131, 179, 211, 0.12);
+  padding-bottom: 105px;
+}
+.block-lower-lit
+{
+  background: rgba(131, 179, 211, 0.2);
 }
 .img-item-index
 {
@@ -557,12 +569,8 @@ font-size: 24px;
 line-height: 28px;
 text-transform: uppercase;
 color: #FFFFFF;
-width: 400px;
 text-align: center;
-padding-top: 89px;
 margin: 0;
-position: relative;
-top: 8px;
 }
 .advantages-description-white
 {
@@ -570,31 +578,32 @@ color: #FFFFFF;
 font-size: 18px;
 line-height: 21px;
 text-align: center;
-padding-left: 90px;
-padding-right: 90px;
-position: relative;
-top: 22px;
+margin: 0;
 display: flex;
 flex-direction: column;
-height: 34px;
 justify-content: space-between;
 align-content: stretch;
 }
-.text-advantages-description
+.advantages-number
 {
-  padding-bottom: 77px;
+  margin: 25px 0;
 }
 .block-item
 {
   background-color:#83B3D3; 
   width: 400px;
-  min-height: 384px
+  min-height: 384px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  padding: 98px 90px 77px;
+  box-sizing: border-box;
 }
 .advantages-title
 {
   position: relative;
   font-style: normal;
-  top: 84px;
+   margin: 0;
   font-weight: bold;
   font-size: 24px;
   line-height: 28px;
@@ -619,7 +628,8 @@ top: -100px;
   background: url("../img/svg/burger.svg") no-repeat;
   position: absolute;
   top: -100px;
-  right: 41%;
+  right: 50%;
+  transform: translateX(+50%);
 }
 .present::before
 {
@@ -630,15 +640,8 @@ top: -100px;
   background: url("../img/svg/present.svg") no-repeat;
   position: absolute;
   top: -100px;
-  right: 42%;
-  text-align: center;
-}
-.title-block
-{
-  padding-top: 77px;
-  position: relative;
-  top: 0;
-
+  right: 50%;
+  transform: translateX(+50%);
 }
 .advantages-description-service
 {
@@ -646,12 +649,7 @@ top: -100px;
 font-size: 18px;
 line-height: 21px;
 color: #333333;
-padding-left: 75px;
-padding-right: 75px;
-padding-top: 20px;
-margin: 0 auto;
-position: relative;
-top: -20px;
+margin: 0;
 }
 .advantages-description
 {
@@ -1709,7 +1707,7 @@ border: 3px solid #FFFFFF;
 border-radius: 4px;
 outline: none;
 }
-.button-aplly:active
+.aplly-text:active
 {
 color: #FFFFFF;
 opacity: 0.3;
@@ -2001,11 +1999,10 @@ padding-left: 35px;
 background: #615048;
 border-radius: 4px;
 }
-.button-details:active
+.button-details-text:active
 {
-  background: #463127;
-border-radius: 4px;
-color: #a5a4a4;
+  color: #FFFFFF;
+  opacity: 0.3;
 }
 .button-wishlist
 {
@@ -2035,10 +2032,10 @@ border-radius: 4px;
   box-sizing: border-box;
   border-radius: 10px;
 }
-.button-wishlist:active
+.button-wishlist-text:active
 {
-  background: #487797;
-  color: #a1a1a1;
+  color: #FFFFFF;
+  opacity: 0.3;
 }
 .button-wishlist-active
 {
@@ -2125,10 +2122,7 @@ font-family: "PT Sans", sans-serif;
 }
 .button-more:hover
 {
-  background: #68A2CA;
-border: 1px solid #756257;
-box-sizing: border-box;
-border-radius: 4px;
+ background: #68A2CA;
 }
 .button-more:focus-visible
 {
@@ -2137,12 +2131,10 @@ border-radius: 4px;
   border-radius: 10px;
   outline: none;
 }
-.button-more:active
+.button-more-text:active
 {
-background: #446b85;
-box-sizing: border-box;
-border-radius: 4px;
-color: #a8a8a8;
+  color: #FFFFFF;
+  opacity: 0.3;
 }
 .pagination
 {
@@ -2186,6 +2178,11 @@ color: #FFFFFF;
 display: block;
 padding-top: 14px;
 padding-bottom: 15px;
+}
+.agination-link-text:active
+{
+color: #FFFFFF;
+opacity: 0.3;
 }
 .pagination-item:hover
 {
